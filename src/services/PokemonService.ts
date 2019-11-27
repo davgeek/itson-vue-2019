@@ -5,12 +5,16 @@ import PokemonPageable from '@/models/PokemonPageable';
 const URL = 'https://pokeapi.co/api/v2/';
 
 class PokemonService {
-    public getById(id: number): Promise<Pokemon> {
+    public getById(id: number | string): Promise<Pokemon> {
         return axios.get(`${URL}pokemon/${id}`);
     }
 
     public getAll(): Promise<PokemonPageable> {
         return axios.get(`${URL}pokemon`);
+    }
+
+    public async getByUrl(url: string): Promise<Pokemon> {
+        return axios.get(url);
     }
 }
 

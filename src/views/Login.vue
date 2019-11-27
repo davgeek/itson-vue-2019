@@ -23,19 +23,19 @@ export default class Login extends Vue {
     private email: string = '';
     private password: string = '';
 
-    @Watch('email')
-    private watchValue() {
-        console.log('login', this.email);
-    }
+    // @Watch('email')
+    // private watchValue() {
+    //     //console.log('login', this.email);
+    // }
 
-    @Watch('password')
-    private watchPassword() {
-        console.log('password', this.password);
-    }
+    // @Watch('password')
+    // private watchPassword() {
+    //     //console.log('password', this.password);
+    // }
 
-    private result(value: string) {
-        console.log('result', value);
-    }
+    // private result(value: string) {
+    //     //console.log('result', value);
+    // }
 }
 </script>
 
