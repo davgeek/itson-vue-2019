@@ -1,7 +1,7 @@
 <template>
   <div>
     <label>{{name}}</label>
-    <input type="text" v-model="value">
+    <b-form-input :type="type" :placeholder="name" v-model="value" />
   </div>
 </template>
 
@@ -11,6 +11,7 @@ import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 @Component
 export default class Input extends Vue {
   @Prop() name!: string;
+  @Prop() type!: string;
 
   private value: string = '';
 

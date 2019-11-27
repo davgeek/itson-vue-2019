@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <h1>Login</h1>
-    <Input name="Email" v-model="email" @result="result" type="email"/>
-    <Input name="Password" v-model="password" type="password"/>
+  <div class="container">
+      <div class="row">
+        <div class="col-6">
+            <h1>Login</h1>
+            <Input name="Email" v-model="email" @result="result" type="email"/>
+            <Input name="Password" v-model="password" type="password"/>
+        </div>
+      </div>
   </div>
 </template>
 
